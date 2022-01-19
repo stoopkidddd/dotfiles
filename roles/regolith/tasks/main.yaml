@@ -4,3 +4,16 @@
     use: yay
     name:
       - regolith-full
+- name: i3 Configuration
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.config/regolith/i3/config"
+    src: "i3config"
+- name: i3xrocks Configuration
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.config/regolith/i3xrocks/conf.d"
+    src: "conf.d/"
+- name: XResources Configuration
+  ansible.builtin.copy:
+    dest: "{{ ansible_user_dir }}/.config/regolith/Xresources"
+    src: "Xresources"
+
