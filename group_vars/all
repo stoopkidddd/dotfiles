@@ -2,6 +2,7 @@ default_roles:
   - system
   - open-vm-tools
   - ssh
+  - regolith
   - firefox
   - mimeapps
   - nitrogen
@@ -22,6 +23,7 @@ default_roles:
   - lazydocker
   - lazygit
   - neovim
+  - conky
   - slack
   - twingate
   - pulumi
