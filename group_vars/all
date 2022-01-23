@@ -24,8 +24,6 @@ default_roles:
   - lazygit
   - neovim
   - conky
-  - slack
-  - twingate
   - pulumi
   - kubectl
   - nvm
