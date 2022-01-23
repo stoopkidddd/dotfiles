@@ -91,7 +91,7 @@ set_from_resource $ws10_key i3-wm.workspace.10.key 0
 
 ## Launch // Terminal // <> Enter ##
 set_from_resource $i3-wm.binding.terminal i3-wm.binding.terminal Return
-bindsym $mod+$i3-wm.binding.terminal exec kitty
+bindsym $mod+$i3-wm.binding.terminal exec --no-startup-id kitty
 
 ## Launch // Browser // <><Shift> Enter ##
 set_from_resource $i3-wm.binding.browser i3-wm.binding.browser Shift+Return
@@ -532,6 +532,9 @@ set_from_resource $i3-wm.gaps.inner.size i3-wm.gaps.inner.size 5
 set_from_resource $i3-wm.gaps.outer.size i3-wm.gaps.outer.size 0
 gaps inner $i3-wm.gaps.inner.size
 gaps outer $i3-wm.gaps.outer.size
+
+# default horizontal gaps to accomodate conky
+gaps horizontal 400
 
 # Only enable gaps on a workspace when there is at least one container
 set_from_resource $i3-wm.gaps.smart i3-wm.gaps.smart on
