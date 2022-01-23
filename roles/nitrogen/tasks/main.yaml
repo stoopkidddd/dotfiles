@@ -20,4 +20,3 @@
   register: background
 - name: Restore
   command: nitrogen --restore
-  when: background.changed
