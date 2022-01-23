@@ -6,7 +6,6 @@ default_roles:
   - firefox
   - mimeapps
   - nitrogen
-  - i3
   - docker
   - pyenv
   - kitty
