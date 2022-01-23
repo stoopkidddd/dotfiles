@@ -1,4 +1,10 @@
 ---
+- name: Install
+  ansible.builtin.package:
+    name:
+      - nitrogen
+    state: latest
+  become: yes
 - name: nitrogen.dir
   file:
     path: "{{ ansible_user_dir }}/.config/nitrogen/"
@@ -7,13 +13,11 @@
   ansible.builtin.template:
     dest: "{{ ansible_user_dir }}/.config/nitrogen/nitrogen.cfg"
     src: "nitrogen.cfg.j2"
-
 - name: bg-saved.cfg
   ansible.builtin.template:
     dest: "{{ ansible_user_dir }}/.config/nitrogen/bg-saved.cfg"
     src: "bg-saved.cfg.j2"
   register: background
-
-# - name: Restore
-#   command: nitrogen --restore
-#   when: background.changed
+- name: Restore
+  command: nitrogen --restore
+  when: background.changed
