@@ -4,6 +4,7 @@ default_roles:
   - ssh
   - regolith
   - firefox
+  - brave
   - mimeapps
   - nitrogen
   - docker
