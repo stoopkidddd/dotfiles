@@ -3,4 +3,4 @@
   kewlfft.aur.aur:
     use: yay
     name:
-      - brave
+      - brave-bin
