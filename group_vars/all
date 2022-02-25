@@ -8,7 +8,6 @@ default_roles:
   - mimeapps
   - nitrogen
   - docker
-  - pyenv
   - kitty
   - bat
   - zsh
@@ -30,9 +29,8 @@ default_roles:
   - postman
   - visual-studio-code
   - smbclient
-  - discord
   - aws-cli
-  - spotify
   - httpie
   - nodejs
   - go
+  - wireguard
