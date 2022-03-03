@@ -74,7 +74,7 @@ if config.enabled.comment then
 end
 
 -- ForceWrite
-map("n", "<C-w>", "<cmd>w!<CR>", opts)
+-- map("n", "<C-w>", "<cmd>w!<CR>", opts)
 
 -- ForceQuit
 map("n", "<C-q>", "<cmd>q!<CR>", opts)
