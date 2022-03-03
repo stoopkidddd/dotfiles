@@ -12,11 +12,11 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Better window navigation
-map("n", "<C-h>", "<C-w>h", opts)
-map("n", "<C-j>", "<C-w>j", opts)
-map("n", "<C-k>", "<C-w>k", opts)
-map("n", "<C-l>", "<C-w>l", opts)
-
+-- map("n", "<C-h>", "<C-w>h", opts)
+-- map("n", "<C-j>", "<C-w>j", opts)
+-- map("n", "<C-k>", "<C-w>k", opts)
+-- map("n", "<C-l>", "<C-w>l", opts)
+--
 -- Resize with arrows
 map("n", "<C-Up>", "<cmd>resize -2<CR>", opts)
 map("n", "<C-Down>", "<cmd>resize +2<CR>", opts)
@@ -33,7 +33,7 @@ map("n", "<A-k>", "<Esc><cmd>m .-2<CR>==gi", opts)
 
 -- NvimTree
 if config.enabled.nvim_tree then
-  map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", opts)
+  map("n", "<leader>b", "<cmd>NvimTreeToggle<CR>", opts)
   map("n", "<leader>o", "<cmd>NvimTreeFocus<CR>", opts)
 end
 
