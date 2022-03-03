@@ -33,4 +33,4 @@ default_roles:
   - httpie
   - nodejs
   - go
-  - wireguard
+  - tailscale

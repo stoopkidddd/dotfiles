@@ -1,0 +1,13 @@
+---
+- name: Install
+  ansible.builtin.package:
+    name:
+      - tailscale
+    state: latest
+  become: yes
+- name: Enable tailscaled
+  ansible.builtin.systemd:
+    enabled: yes
+    name: tailscaled
+    state: started
+  become: yes
