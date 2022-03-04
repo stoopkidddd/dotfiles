@@ -101,6 +101,13 @@ return packer.startup(function(use)
   }
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
+  use {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end
+  }
+
   -- Git
   use "lewis6991/gitsigns.nvim"
 
@@ -144,7 +151,46 @@ return packer.startup(function(use)
     end
   }
 
-  use 'ggandor/lightspeed.nvim'
+--  use 'ggandor/lightspeed.nvim'
+
+  use {
+    "phaazon/hop.nvim",
+    config = function()
+      require("hop").setup()
+    end
+  }
+
+  use {
+    'filipdutescu/renamer.nvim',
+    branch = 'master',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  use({
+    "gbprod/cutlass.nvim",
+    config = function()
+      require("cutlass").setup({
+        cut_key = "x"
+      })
+    end
+  })
+
+  use 'sbdchd/neoformat'
+
+  use {
+    'chipsenkbeil/distant.nvim',
+    config = function()
+      require('distant').setup {
+        -- Applies Chip's personal settings to every machine you connect to
+        --
+        -- 1. Ensures that distant servers terminate with no connections
+        -- 2. Provides navigation bindings for remote directories
+        -- 3. Provides keybinding to jump into a remote file's parent directory
+        ['*'] = require('distant.settings').chip_default()
+      }
+    end
+  }
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

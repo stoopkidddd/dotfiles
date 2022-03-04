@@ -1,0 +1,9 @@
+- name: Download Rust Install
+  get_url:
+    dest: /tmp/rust-install.sh
+    mode: 0755
+    url: https://sh.rustup.rs 
+
+- name: Execute Rust Install Script
+  shell: /tmp/rust-install.sh
+

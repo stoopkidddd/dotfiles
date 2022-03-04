@@ -5,3 +5,10 @@
       - nvm
     state: latest
   become: yes
+- name: Install Node LTS
+  ansible.builtin.shell: nvm install --lts
+- name: Use Node LTS
+  ansible.builtin.shell: nvm use --lts
+- name: Install global NPM dependencies
+  ansible.builtin.shell: npm install -g typescript typescript-language-server prettier eslint neovim
+
