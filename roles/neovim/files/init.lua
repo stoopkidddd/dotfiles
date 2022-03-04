@@ -1,32 +1,22 @@
-local utils = require "core.utils"
-
-utils.disabled_builtins()
-
-utils.bootstrap()
-
-utils.impatient()
-
-local sources = {
-  "core.options",
-  "core.autocmds",
-  "core.plugins",
-  "core.mappings",
-}
-
-for _, source in ipairs(sources) do
-  local status_ok, fault = pcall(require, source)
-  if not status_ok then
-    error("Failed to load " .. source .. "\n\n" .. fault)
-  end
-end
-
-local config = utils.user_settings()
-
-if type(config.polish) == "function" then
-  config.polish()
-else
-  error "The polish value in your user configuration must be a function"
-end
-
--- keep this last:
-utils.compiled()
+require "user.options"
+require "user.keymaps"
+require "user.plugins"
+require "user.colorscheme"
+require "user.cmp"
+require "user.lsp"
+require "user.telescope"
+require "user.treesitter"
+require "user.autopairs"
+require "user.comment"
+require "user.gitsigns"
+require "user.nvim-tree"
+require "user.bufferline"
+require "user.lualine"
+require "user.toggleterm"
+require "user.project"
+require "user.impatient"
+require "user.indentline"
+require "user.alpha"
+require "user.whichkey"
+require "user.autocommands"
+require "user.mappings"
