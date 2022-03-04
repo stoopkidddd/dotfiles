@@ -151,6 +151,11 @@ return packer.startup(function(use)
     end
   }
 
+  use {
+    "ThePrimeagen/harpoon",
+    requires = "nvim-lua/plenary.nvim"
+  }
+
 --  use 'ggandor/lightspeed.nvim'
 
   use {
