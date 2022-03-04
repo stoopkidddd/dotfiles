@@ -5,5 +5,5 @@
     url: https://sh.rustup.rs 
 
 - name: Execute Rust Install Script
-  shell: /tmp/rust-install.sh
+  shell: /tmp/rust-install.sh -y
 
