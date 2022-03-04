@@ -34,3 +34,4 @@ default_roles:
   - nodejs
   - go
   - tailscale
+  - rust
