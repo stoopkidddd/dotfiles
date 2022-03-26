@@ -18,7 +18,7 @@ default_roles:
   - nnn
   - git
 #  - bottom
-  - k9s
+#  - k9s
 #  - lazydocker
 #  - lazygit
   - neovim
