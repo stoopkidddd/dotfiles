@@ -7,6 +7,15 @@
       - curl
       - ninja-build
       - unzip
+      - gettext
+      - libtool
+      - libtool-bin
+      - autoconf
+      - automake
+      - cmake
+      - g++
+      - pkg-config
+      - doxygen
     state: latest
   become: yes
 
