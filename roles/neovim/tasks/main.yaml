@@ -5,7 +5,6 @@
       - build-essential
       - cmake
       - curl
-      - ninja
       - tree-sitter
       - unzip
     state: latest
