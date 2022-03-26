@@ -1,6 +1,5 @@
 ---
 - name: Install
-  kewlfft.aur.aur:
-    use: yay
-    name:
-      - brave-bin
+  hosts: all
+  roles:
+    - role: staticdev.brave

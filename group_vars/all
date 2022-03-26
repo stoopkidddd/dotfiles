@@ -3,10 +3,10 @@ default_roles:
   - open-vm-tools
   - ssh
   - regolith
-  - firefox
+ # - firefox
   - brave
-  - mimeapps
-  - nitrogen
+ # - mimeapps
+ # - nitrogen
   - docker
   - kitty
   - bat
@@ -19,18 +19,18 @@ default_roles:
   - git
   - bottom
   - k9s
-  - lazydocker
-  - lazygit
+#  - lazydocker
+#  - lazygit
   - neovim
   - conky
-  - pulumi
+#  - pulumi
   - kubectl
-  - postman
-  - visual-studio-code
+#  - postman
+#  - visual-studio-code
   - smbclient
-  - aws-cli
+# - aws-cli
   - httpie
   - nodejs
-  - go
+# - go
   - tailscale
   - rust

@@ -24,12 +24,6 @@
     scope: global
     value: main
 
-- name: Set pull.rebase
-  community.general.git_config:
-    name: pull.rebase
-    scope: global
-    value: true
-
 - name: Set rebase.autoStash
   community.general.git_config:
     name: rebase.autoStash
