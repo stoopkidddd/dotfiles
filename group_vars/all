@@ -14,7 +14,7 @@ default_roles:
   - oh-my-zsh
   - tmux
   - oh-my-tmux
-  - ripgrep
+#  - ripgrep
   - nnn
   - git
   - bottom
