@@ -13,10 +13,10 @@
     state: started
   become: yes
 
-- name: Enable vmware-vmblock-fuse
-  ansible.builtin.systemd:
-    enabled: yes
-    name: vmware-vmblock-fuse
-    state: started
-  become: yes
+#- name: Enable vmware-vmblock-fuse
+#  ansible.builtin.systemd:
+#    enabled: yes
+#    name: vmware-vmblock-fuse
+#    state: started
+#  become: yes
 
