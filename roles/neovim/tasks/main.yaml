@@ -2,7 +2,7 @@
 - name: Dependencies
   ansible.builtin.package:
     name:
-      - base-devel
+      - build-essential
       - cmake
       - curl
       - ninja
