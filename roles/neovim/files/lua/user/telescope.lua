@@ -7,10 +7,11 @@ local actions = require "telescope.actions"
 
 telescope.setup {
   defaults = {
-    file_ignore_patterns = { "node_modules"},
+    file_ignore_patterns = { "node_modules", "^.git" },
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = { "truncate" },
+    hidden = true,
     mappings = {
       i = {
         ["<C-n>"] = actions.cycle_history_next,
@@ -84,9 +85,13 @@ telescope.setup {
     -- }
     -- Now the picker_config_key will be applied every time you call this
     -- builtin picker
-   live_grep = {
-      theme= "dropdown"
-    }
+    find_files = {
+      hidden = true,
+    },
+    live_grep = {
+      theme= "dropdown",
+      hidden = true,
+    },
   },
   extensions = {
     -- Your extension configuration goes here:
