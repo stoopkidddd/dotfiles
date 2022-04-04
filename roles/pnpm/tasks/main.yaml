@@ -1,6 +1,4 @@
----
-- name: Install
-  kewlfft.aur.aur:
-    use: yay
-    name:
-      - dotnet-sdk
+- name: Install pnpm globally.
+  community.general.npm:
+    name: pnpm@next-7
+    global: yes
