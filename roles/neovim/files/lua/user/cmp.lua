@@ -107,7 +107,7 @@ cmp.setup {
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
-        cmp_tabnone = "[T9]"
+        cmp_tabnine = "[T9]"
       })[entry.source.name]
       return vim_item
     end,
@@ -117,7 +117,7 @@ cmp.setup {
     { name = "luasnip" },
     { name = "buffer" },
     { name = "path" },
-    { name = "cmp_tabnine "}
+    { name = "cmp_tabnine"}
   },
   sorting = {
     priority_weight = 2,
